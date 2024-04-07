@@ -1,0 +1,85 @@
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 100%;
+  color: rgba(8, 8, 18, 0.9);
+}
+@media screen and (min-width: 1200px) {.container {width: 1128px;}}
+@media screen and (min-width: 992px) {.container {width: 960px;}}
+@media screen and (min-width: 768px) {.container {width: 720px;}}
+@media (max-width: 768px) {.container { width: 100%;}}
+section {
+  border-radius: 0.8rem;
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px rgb(140 140 140/0.2);
+}
+.info-section .profile-background-image {
+  padding-bottom: 25%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background: url("./assets/default-cover.png") 50% / cover;
+}
+.info-section .content .avatar-wrapper {
+  position: relative;
+  width: 160px;
+  border-radius: 50%;
+  margin-top: -100px !important;
+}
+.info-section .content .avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.info-section .content .name-holder:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  display: block;
+}
+.h1{font-size: 24px; font-weight: bold;}
+.d-flex {display: flex;}
+.my-0 {margin-top: 0;margin-bottom: 0;}
+button {
+  border-radius: 1.6rem;
+  height: 32px;
+  padding: 6px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  transition-duration: 167ms;
+  background-color: #fff;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+}
+button.message:hover {box-shadow: inset 0 0 0 1px #0a66c2;}
+.experience-section .time {
+  line-height: 1.2rem;
+  font-size: 14px;
+  color: #00000099;
+}
+.experience-section .items .past .item {
+  padding: 1.2rem 0;
+  position: relative;
+}
+.experience-section .items > .item {
+  padding-top: 12px;
+  border-bottom: 1px solid rgb(140 140 140/0.2);
+}
+.experience-section .items .past .item a {flex-direction: column;}
+.experience-section .items .past .item::before {
+  content: "";
+  position: absolute;
+  left: -28.5px;
+  top: 40px;
+  height: calc(100% - (2 * 1.2rem));
+  width: 2px;
+  background-color: rgb(140 140 140/0.2);
+}
+.experience-section .items .past .item:last-child::before {display: none;}
+.experience-section .node {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: rgb(0 0 0/0.3);
+  top: 0px;
+  left: -32px;
+  margin-bottom: calc(0.8rem * -1);
+}
